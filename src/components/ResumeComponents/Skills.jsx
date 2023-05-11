@@ -4,20 +4,20 @@ const Skills = () => {
   const skills = [
     {
       name: "Data Structures",
-      level: 70,
+      level: 80,
       difference: 30,
     },
 
     {
       name: "C++",
       level: 80,
-      difference: 20,
+      difference: 25,
     },
 
     {
       name: "C++",
       level: 90,
-      difference: 10,
+      difference: 30,
     },
   ];
   return (
