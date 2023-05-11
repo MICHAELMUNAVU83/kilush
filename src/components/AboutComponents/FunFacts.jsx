@@ -34,14 +34,16 @@ const FunFacts = () => {
   ];
   return (
     <section id="introduction">
-      <h1>Fun Facts</h1>
+      <h1 className="text-4xl font-semibold text-start p-4 text-white">
+        Fun Facts
+      </h1>
       <div className="flex mt-8 justify-center w-[100%] ">
         {funfactsdetails.map((detail) => (
           <div
             className="flex cursor-pointer  w-[25%] p-2  items-center flex-col gap-2"
             style={{
               borderTop: "1px solid white",
-  
+
               borderRight: "1px solid white",
             }}
           >
