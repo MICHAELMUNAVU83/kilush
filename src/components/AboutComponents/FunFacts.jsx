@@ -37,7 +37,14 @@ const FunFacts = () => {
       <h1>Fun Facts</h1>
       <div className="flex mt-8 justify-center w-[100%] ">
         {funfactsdetails.map((detail) => (
-          <div className="flex cursor-pointer border-white w-[25%] p-2 border-t-2 border-r-2 items-center flex-col gap-2">
+          <div
+            className="flex cursor-pointer  w-[25%] p-2  items-center flex-col gap-2"
+            style={{
+              borderTop: "1px solid white",
+  
+              borderRight: "1px solid white",
+            }}
+          >
             <p className="text-xl h-12 w-12 flex items-center justify-center mx-auto rounded-full border-white border-2 p-2">
               {detail.icon}
             </p>

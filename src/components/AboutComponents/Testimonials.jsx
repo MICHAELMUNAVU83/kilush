@@ -2,8 +2,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
-import "swiper/css/scrollbar";
-import { Pagination, Scrollbar } from "swiper";
+
+import { Autoplay } from "swiper";
 import testimonial1 from "../images/testimonial1.jpeg";
 import testimonial2 from "../images/testimonial2.jpeg";
 import testimonial3 from "../images/testimonial3.jpeg";
@@ -58,11 +58,11 @@ const Testimonials = () => {
     <div>
       <Swiper
         loop={true}
-        scrollbar={{
-          draggable: true,
-          hide: false,
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
         }}
-        modules={[Pagination, Scrollbar]}
+        modules={[Autoplay]}
         className="flex justify-center items-center swiper-container"
       >
         {testimonials.map((testimonial) => (

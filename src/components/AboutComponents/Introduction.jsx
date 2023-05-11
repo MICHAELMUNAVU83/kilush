@@ -25,14 +25,27 @@ const Introduction = () => {
   ];
   return (
     <section id="introduction">
-      <h1>About me</h1>
-      <div className="flex mt-8 justify-center">
-        <p className="w-[50%] border-t-2 border-r-2 p-4 border-white">
+      <h1 className="text-4xl font-semibold text-start p-4 text-white">
+        About Me
+      </h1>
+      <div className="flex  justify-center">
+        <p
+          className="w-[50%]  p-4 "
+          style={{
+            borderRight: "1px solid white",
+            borderTop: "1px solid white",
+          }}
+        >
           Hello! I'm Harper Ryan. I have rich experience in management,
           accountancy, law, human resources, financial control. I love to talk
           with you about our unique.
         </p>
-        <div className="flex flex-col gap-2 border-t-2 border-white p-4 justify-between w-[50%]">
+        <div
+          className="flex flex-col gap-2  p-4 justify-between w-[50%]"
+          style={{
+            borderTop: "1px solid white",
+          }}
+        >
           {introductiondetails.map((detail) => (
             <div className="flex flex-col gap-2">
               <div className="flex w-[80%] mx-auto justify-between">
