@@ -5,7 +5,7 @@ import Map, { Marker } from "react-map-gl";
 import { HiLocationMarker } from "react-icons/hi";
 const Maps = () => {
   return (
-    <div className="bg-black my-4  group h-full ">
+    <div className="bg-black my-4  group  ">
       <Map
         style={{
           margin: "auto",

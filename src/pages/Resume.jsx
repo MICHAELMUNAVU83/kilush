@@ -4,7 +4,7 @@ import Skills from "../components/ResumeComponents/Skills";
 
 const Resume = () => {
   return (
-    <div>
+    <div className="p-8 ml-[100px] h-[600px] overflow-y-scroll">
       <ExperienceEducation />
       <Skills />
     </div>
