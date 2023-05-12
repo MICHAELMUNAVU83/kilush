@@ -8,7 +8,7 @@ import SideBar from "./components/SideBar";
 function App() {
   return (
     <div className="bg-white h-screen flex flex-col justify-center items-center">
-    <div className="bg-[#0F0F0F] w-[70%] mx-auto text-white">
+    <div className=" w-[85%] mx-auto text-white">
       <Router>
         <SideBar />
         <Routes>

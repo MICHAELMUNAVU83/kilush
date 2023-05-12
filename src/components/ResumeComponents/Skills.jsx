@@ -66,7 +66,7 @@ const Skills = () => {
                     ></path>
                   </svg>
                 </span>
-                <span className="text-white text-xl">{knowldge}</span>
+                <span className="text-white">{knowldge}</span>
               </li>
             ))}
           </ul>

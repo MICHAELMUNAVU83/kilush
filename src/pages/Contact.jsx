@@ -4,7 +4,7 @@ import ContactDetails from "../components/ContactComponents/ContactDetails";
 import ContactForm from "../components/ContactComponents/ContactForm";
 const Contact = () => {
   return (
-    <div className="p-8 ml-[100px] h-[600px] overflow-y-scroll">
+    <div className="ml-[550px] bg-[#0F0F0F] h-[80vh] my-[4vh] overflow-y-scroll">
       <Maps />
       <ContactDetails />
       <ContactForm />

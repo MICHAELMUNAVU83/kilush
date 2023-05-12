@@ -46,7 +46,7 @@ const ExperienceEducation = () => {
           </h1>
           {experiences.map((experience) => (
             <div
-              className="flex flex-col p-4 gap-2"
+              className="flex flex-col h-[200px] p-4 gap-2"
               style={{
                 borderBottom: "1px solid #fff",
                 borderTop: "1px solid #fff",
@@ -55,8 +55,8 @@ const ExperienceEducation = () => {
               <p
                 className={
                   experience.id === 1
-                    ? " flex justify-center items-center border-green-500 border-2 p-2 w-[30%]"
-                    : "border-gray-400 border-2 p-2 w-[30%]"
+                    ? " flex justify-center items-center border-green-500 border-2 p-2 w-[50%]"
+                    : " flex justify-center items-center  border-gray-400 border-2 p-2 w-[50%]"
                 }
               >
                 {experience.timeframe}
@@ -74,7 +74,7 @@ const ExperienceEducation = () => {
           </h1>
           {educations.map((education) => (
             <div
-              className="flex flex-col p-4 gap-2"
+              className="flex flex-col h-[200px] p-4 gap-2"
               style={{
                 borderBottom: "1px solid #fff",
                 borderTop: "1px solid #fff",
@@ -83,8 +83,8 @@ const ExperienceEducation = () => {
               <p
                 className={
                   education.id === 1
-                    ? " flex justify-center items-center border-green-500 border-2 p-2 w-[30%]"
-                    : "border-gray-400 border-2 p-2 w-[30%]"
+                    ? " flex justify-center items-center border-green-500 border-2 p-2 w-[50%]"
+                    : " flex justify-center items-center  border-gray-400 border-2 p-2 w-[50%]"
                 }
               >
                 {education.timeframe}

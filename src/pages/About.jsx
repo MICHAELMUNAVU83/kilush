@@ -7,7 +7,10 @@ import Pricing from "../components/AboutComponents/Pricing";
 import Services from "../components/AboutComponents/Services";
 const About = () => {
   return (
-    <div className="ml-[100px] h-[600px] overflow-y-scroll" id="about">
+    <div
+      className="ml-[550px] bg-[#0F0F0F] h-[80vh] mt-[5vh] mb-[5vh] overflow-y-scroll"
+      id="about"
+    >
       <Introduction />
       <Services />
       <Pricing />
