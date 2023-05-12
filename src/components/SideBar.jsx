@@ -36,7 +36,9 @@ const SideBar = () => {
         className="w-[500px] h-[90vh] flex justify-center p-8 items-end bg-cover bg-center "
       >
 
-        ybn
+        <div>
+          
+      </div>
       </div>
     </div>
   );
