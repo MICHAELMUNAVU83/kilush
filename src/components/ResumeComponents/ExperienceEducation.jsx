@@ -23,10 +23,11 @@ const ExperienceEducation = () => {
   const educations = [
     {
       id: 1,
-      school: "moringa school",
-      degree: "data science",
-      timeframe: "2020-2021",
-      description: "I was a data scientist at moringa school",
+      school: "Moringa School",
+      degree: "Data Science Course",
+      timeframe: "2022-present",
+      description:
+        "At Moringa School, I gained expertise in Python, data analysis, SQL, scientific computing, and machine learning. Proficient in libraries, statistical analysis, and advanced techniques. Ready for an impactful data science world.",
     },
     {
       id: 2,
@@ -46,7 +47,7 @@ const ExperienceEducation = () => {
           </h1>
           {experiences.map((experience) => (
             <div
-              className="flex flex-col h-[200px] p-4 gap-2"
+              className="flex flex-col h-[300px] p-4 gap-2"
               style={{
                 borderBottom: "1px solid #fff",
                 borderTop: "1px solid #fff",
@@ -74,7 +75,7 @@ const ExperienceEducation = () => {
           </h1>
           {educations.map((education) => (
             <div
-              className="flex flex-col h-[200px] p-4 gap-2"
+              className="flex flex-col h-[300px] p-4 gap-2"
               style={{
                 borderBottom: "1px solid #fff",
                 borderTop: "1px solid #fff",

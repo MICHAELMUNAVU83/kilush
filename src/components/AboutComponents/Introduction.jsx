@@ -5,17 +5,17 @@ const Introduction = () => {
     {
       id: 1,
       title: "Name",
-      content: "Harper Ryan",
+      content: "Amos Kibet",
     },
     {
       id: 2,
-      title: "Age",
-      content: "25",
+      title: "Location",
+      content: "Nairobi, Kenya",
     },
     {
       id: 3,
-      title: "Address",
-      content: "New York, USA",
+      title: "Freelance",
+      content: "Available",
     },
     {
       id: 4,
@@ -36,9 +36,11 @@ const Introduction = () => {
             borderTop: "1px solid white",
           }}
         >
-          Hello! I'm Harper Ryan. I have rich experience in management,
-          accountancy, law, human resources, financial control. I love to talk
-          with you about our unique.
+          I'm Amos Kibet, a dedicated Data Scientist passionate about uncovering
+          insights from complex datasets. From data analysis to machine
+          learning, I'm here to share my expertise. Whether you're a data
+          enthusiast, a business owner, or simply curious, I've got you covered.
+          Let's dive into the world of data science together!
         </p>
         <div
           className="flex flex-col gap-2  p-4 justify-between w-[50%]"
@@ -48,11 +50,11 @@ const Introduction = () => {
         >
           {introductiondetails.map((detail) => (
             <div className="flex flex-col gap-2">
-              <div className="flex w-[80%] mx-auto justify-between">
-                <p className="bg-red-500 px-2">Name:</p>
-                <p>Harper Ryan</p>
+              <div className="flex w-[80%] mx-auto items-center justify-between">
+                <p className="bg-[#5FBFF9] flex justify-center text-black items-center w-[90px]">{detail.title}:</p>
+                <p>{detail.content}</p>
               </div>
-              <p className="w-[70%] mx-auto bg-red-500 h-[1px] " />
+              <p className="w-[70%] mx-auto bg-[#5FBFF9] h-[1px] " />
             </div>
           ))}
         </div>

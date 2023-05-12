@@ -45,7 +45,7 @@ const Pricing = () => {
               borderRight: "1px solid white",
             }}
           >
-            <div className="flex items-center justify-center w-12 h-12 bg-red-500 rounded-full">
+            <div className="flex items-center justify-center w-12 h-12 bg-[#5FBFF9] text-black rounded-full">
               {price.icon}
             </div>
             <h2 className="mt-4 text-2xl font-semibold text-white">

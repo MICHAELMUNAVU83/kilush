@@ -16,9 +16,9 @@ const SideBar = () => {
             <BsFillMoonStarsFill className="text-2xl cursor-pointer" />
           </h1>
         </div>
-        <div className="flex items-center justify-center w-[50px] h-[200px] bg-red-500 flex-col gap-8 py-4">
+        <div className="flex items-center justify-center w-[50px] h-[200px] bg-[#5FBFF9] flex-col gap-8 py-4">
           <Link to="/">
-            <FaUserAlt className="text-2xl  cursor-pointer"  />
+            <FaUserAlt className="text-2xl  cursor-pointer" />
           </Link>
 
           <Link to="/resume">
@@ -30,10 +30,14 @@ const SideBar = () => {
           </Link>
         </div>
       </div>
+
       <div
         style={{ backgroundImage: `url(${profile})` }}
-        className="w-[500px]  h-[90vh] bg-cover bg-center "
-      ></div>
+        className="w-[500px] h-[90vh] flex justify-center p-8 items-end bg-cover bg-center "
+      >
+
+        ybn
+      </div>
     </div>
   );
 };

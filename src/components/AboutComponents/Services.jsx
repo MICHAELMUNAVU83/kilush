@@ -3,46 +3,63 @@ import { BsDatabaseFillAdd } from "react-icons/bs";
 import { SiMicrosoftexcel } from "react-icons/si";
 import { TbRobot } from "react-icons/tb";
 import { SiThealgorithms } from "react-icons/si";
+import { SiSimpleanalytics } from "react-icons/si";
+import { SiWebmoney } from "react-icons/si";
+import { AiFillDatabase } from "react-icons/ai";
 
 const Services = () => {
   const services = [
     {
       id: 1,
-      icon: <BsDatabaseFillAdd />,
-      title: "Data Analytics",
+      icon: <SiSimpleanalytics />,
+      title: "Data Analysis",
       description:
-        "We provide data analytics services to help you make better decisions for your business.",
+        " Analyzing data to derive meaningful insights for informed decision-making.",
     },
     {
       id: 2,
-      icon: <SiMicrosoftexcel />,
-      title: "Data Management",
+      icon: <SiWebmoney />,
+      title: "Web Scraping",
 
       description:
-        "We provide data management services to help you make better decisions for your business.",
+        "Extracting data from websites for analysis or automation purposes.",
     },
     {
       id: 3,
-      icon: <TbRobot />,
-      title: "Data Science",
+      icon: <BsDatabaseFillAdd />,
+      title: "Database Management",
 
       description:
-        "We provide data science services to help you make better decisions for your business.",
+        " Organizing and optimizing data storage for efficient retrieval and manipulation.",
     },
     {
       id: 4,
-      icon: <SiThealgorithms />,
-      title: "Data Visualization",
+      icon: <TbRobot />,
+      title: "Machine Learning",
 
       description:
-        "We provide data visualization services to help you make better decisions for your business.",
+        "Utilizing algorithms to enable systems to learn and improve autonomously.",
+    },
+    {
+      id: 5,
+      icon: <AiFillDatabase />,
+      title: "Model Deployment",
+      description:
+        "Deploying machine learning models to production for real-world use.",
+    },
+    {
+      id: 6,
+      icon: <SiThealgorithms />,
+      title: "Website Automation",
+      description:
+        "Automating repetitive tasks on websites to save time and effort.",
     },
   ];
 
   return (
     <>
       <h1 className="text-4xl font-semibold text-start p-4 text-white">
-        Our Services
+        My Services
       </h1>
       <div className="grid grid-cols-2 my-8">
         {services.map((service) => (
@@ -54,7 +71,7 @@ const Services = () => {
               borderRight: "1px solid white",
             }}
           >
-            <div className="flex items-center justify-center w-12 h-12 bg-red-500 rounded-full">
+            <div className="flex items-center justify-center w-12 h-12 bg-[#5FBFF9] text-black rounded-full">
               {service.icon}
             </div>
 

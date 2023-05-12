@@ -5,11 +5,11 @@ import Map, { Marker } from "react-map-gl";
 import { HiLocationMarker } from "react-icons/hi";
 const Maps = () => {
   return (
-    <div className="bg-black my-4  group  ">
+    <div className="bg-black my-4   group  ">
       <Map
         style={{
           margin: "auto",
-          height: "400px",
+          height: "350px",
           cursor: "pointer",
 
           borderRadius: "5px",
