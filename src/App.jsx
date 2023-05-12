@@ -15,7 +15,7 @@ function App() {
     <>
       <Particles
         options={{
-          fpsLimit: 60,
+          fpsLimit: 80,
           particles: {
             color: {
               value: "#5FBFF9",
@@ -55,7 +55,7 @@ function App() {
               speed: 3,
               straight: true,
               trail: {
-                fillColor: "#000",
+                fillColor: "#0B0612",
                 length: 20,
                 enable: true,
               },
@@ -78,7 +78,7 @@ function App() {
             },
           },
           background: {
-            color: "#3c5570",
+            color: "#0B0612",
           },
           fullScreen: {
             zIndex: -1,
@@ -102,7 +102,7 @@ function App() {
         }}
         init={particlesInit}
       />
-      
+
       <div className="  h-screen flex flex-col justify-center items-center z-10">
         <div className=" w-[85%] mx-auto text-white">
           <Router>
@@ -116,8 +116,6 @@ function App() {
           </Router>
         </div>
       </div>
-
-     
     </>
   );
 }

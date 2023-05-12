@@ -89,7 +89,7 @@ const SideBar = () => {
                   "Data Scientist",
                   "Machine Learning Engineer",
                   "Data Analyst",
-                  "Web Scraping Expert",
+                  "Web Scrapping Expert",
                   "Database Manager",
                 ],
                 autoStart: true,

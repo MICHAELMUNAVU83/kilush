@@ -19,7 +19,7 @@ const Services = () => {
     {
       id: 2,
       icon: <SiWebmoney />,
-      title: "Web Scraping",
+      title: "Web Scrapping",
 
       description:
         "Extracting data from websites for analysis or automation purposes.",
