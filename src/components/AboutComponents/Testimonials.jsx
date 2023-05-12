@@ -72,7 +72,7 @@ const Testimonials = () => {
                 className="flex justify-start cursor-pointer  transition-all duration-500 ease-in-out"
                 onClick={swipeBack}
               >
-                <BsArrowLeft className="text-2xl text-start" />
+                <BsArrowLeft className="text-2xl text-[#5FBFF9] text-start" />
               </p>
               <div className="flex flex-col justify-center items-center">
                 <div className="w-[80%] my-2 mx-auto">
@@ -87,14 +87,14 @@ const Testimonials = () => {
                   className="w-32 h-32 rounded-full"
                 />
 
-                <h1 className="text-2xl font-bold">{testimonial.name}</h1>
+                <h1 className="text-2xl text-gray-500 font-bold">{testimonial.name}</h1>
                 <h2 className="text-xl font-semibold">{testimonial.role}</h2>
               </div>
               <p
                 className="flex justify-end  cursor-pointer transition-all duration-500 ease-in-out"
                 onClick={swipe}
               >
-                <BsArrowRight className="text-2xl  text-end" />
+                <BsArrowRight className="text-2xl text-[#5FBFF9]  text-end" />
               </p>
             </div>
           </SwiperSlide>

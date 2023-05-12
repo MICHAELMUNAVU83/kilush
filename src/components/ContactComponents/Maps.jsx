@@ -29,10 +29,10 @@ const Maps = () => {
           longitude={37.073487}
          
         >
-          <p className="font-bold px-2 py-1 text-black rounded-xl">
+          <p className="font-bold px-2 py-1 uppercase  text-black ">
             My Location
           </p>
-          <HiLocationMarker className="text-5xl text-black" />
+          <HiLocationMarker className="text-5xl text-[#5FBFF9]" />
         </Marker>
       </Map>
     </div>

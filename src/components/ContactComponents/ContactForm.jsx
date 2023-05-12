@@ -26,7 +26,7 @@ const ContactForm = () => {
         rows="10"
         className="w-[100%] my-4 border-2 bg-[#0F0F0F] border-gray-400  p-2 flex justify-between "
       ></textarea>
-      <p className="text-gray-500 uppercase font-bold  transition-all ease-in-out duration-500 cursor-pointer items-center gap-2 flex">
+      <p className="text-gray-500 uppercase font-bold  cursor-pointer items-center gap-2 flex">
         Send Message
         <BiArrowFromLeft className="text-[#5FBFF9] text-xl " />
       </p>
