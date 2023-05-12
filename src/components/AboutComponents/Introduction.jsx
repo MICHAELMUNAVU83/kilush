@@ -51,7 +51,7 @@ const Introduction = () => {
           {introductiondetails.map((detail) => (
             <div className="flex flex-col gap-2">
               <div className="flex w-[80%] mx-auto items-center justify-between">
-                <p className="bg-[#5FBFF9] flex justify-center text-black items-center w-[90px]">{detail.title}:</p>
+                <p className="bg-[#5FBFF9] rounded-md flex justify-center text-black items-center w-[90px]">{detail.title}:</p>
                 <p>{detail.content}</p>
               </div>
               <p className="w-[70%] mx-auto bg-[#5FBFF9] h-[1px] " />

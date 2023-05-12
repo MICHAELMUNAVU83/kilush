@@ -1,11 +1,12 @@
 import React from "react";
-
+import { BsCardList } from "react-icons/bs";
+import { GiGiftOfKnowledge } from "react-icons/gi";
 const Skills = () => {
   const skills = [
     {
       name: "Data Analysis",
-      level: 80,
-      difference: 30,
+      level: 100,
+      difference: 25,
     },
 
     {
@@ -16,13 +17,13 @@ const Skills = () => {
 
     {
       name: "Web Scraping",
-      level: 90,
-      difference: 30,
+      level: 70,
+      difference: 25,
     },
     {
       name: "Database Management",
-      level: 80,
-      difference: 30,
+      level: 70,
+      difference: 25,
     },
 
     {
@@ -33,8 +34,8 @@ const Skills = () => {
 
     {
       name: "Model Deployment",
-      level: 90,
-      difference: 30,
+      level: 80,
+      difference: 25,
     },
   ];
   const knowldges = [
@@ -55,15 +56,18 @@ const Skills = () => {
       </h1>
       <div className="flex ">
         <div className="flex p-4 flex-col w-[50%]">
-          <h1 className="uppercase">OVERALL</h1>
-          <p className="h-[1px] bg-red-500 w-[70%]  my-2" />
+          <div className="flex items-center ">
+            <h1 className="uppercase font-bold text-2xl">OVERALL</h1>
+            <div className="p-2 border-[#5FBFF9] border-2 text-[#5FBFF9] rounded-full flex items-center justify-center ml-2">
+              <BsCardList />
+            </div>
+          </div>
+          <p className="h-[2px] bg-[#5FBFF9] w-[70%]  my-4" />
           {skills.map((skill) => (
             <div className="flex flex-col my-2">
               <p>{skill.name}</p>
               <div className="flex w-[90%] p-2">
-                <p
-                  className={`bg-green-500 h-[4px] w-[${skill.level}%]`}
-                />
+                <p className={`bg-green-500 h-[4px] w-[${skill.level}%]`} />
                 <p
                   className={`bg-gray-400 h-[4px] w-[${skill.difference}%] `}
                 />
@@ -72,8 +76,13 @@ const Skills = () => {
           ))}
         </div>
         <div className="flex p-4  flex-col w-[50%]">
-          <h1 className="uppercase">KNOWLEDGE</h1>
-          <p className="h-[1px] bg-red-500 w-[70%]  my-2" />
+          <div className="flex items-center ">
+            <h1 className="uppercase font-bold text-2xl">KNOWLEDGE</h1>
+            <div className="p-2 border-[#5FBFF9] border-2 text-[#5FBFF9] rounded-full flex items-center justify-center ml-2">
+              <GiGiftOfKnowledge  />
+            </div>
+          </div>
+          <p className="h-[2px] bg-[#5FBFF9] w-[70%]  my-4" />
           <ul className=" space-y-4">
             {knowldges.map((knowldge) => (
               <li className="flex my-2  items-center">

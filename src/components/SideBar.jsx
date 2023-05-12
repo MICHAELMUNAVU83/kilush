@@ -11,12 +11,12 @@ const SideBar = () => {
   return (
     <div className="  text-white fixed   flex flex-row justify-center items-center">
       <div className="flex h-[200px] flex-col gap-4">
-        <div className="flex w-[50px] h-[100px] items-center justify-center bg-black flex-col py-2 ">
+        <div className="flex w-[50px] h-[100px] items-center justify-center text-[#5FBFF9] bg-black flex-col py-2 ">
           <h1 className="font-bold">
-            <BsFillMoonStarsFill className="text-2xl cursor-pointer" />
+            <BsFillMoonStarsFill className="text-2xl  cursor-pointer" />
           </h1>
         </div>
-        <div className="flex items-center justify-center w-[50px] h-[200px] bg-[#5FBFF9] flex-col gap-8 py-4">
+        <div className="flex items-center justify-center w-[50px]  text-black h-[200px] bg-[#5FBFF9] flex-col gap-8 py-4">
           <Link to="/">
             <FaUserAlt className="text-2xl  cursor-pointer" />
           </Link>

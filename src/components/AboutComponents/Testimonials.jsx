@@ -76,9 +76,9 @@ const Testimonials = () => {
               </p>
               <div className="flex flex-col justify-center items-center">
                 <div className="w-[80%] my-2 mx-auto">
-                  <RiDoubleQuotesL className="text-2xl text-start" />
+                  <RiDoubleQuotesL className="text-2xl  text-gray-500 text-start" />
                   <p className="text-center  ">{testimonial.body}</p>
-                  <RiDoubleQuotesR className="float-right text-2xl" />
+                  <RiDoubleQuotesR className="float-right  text-gray-500 text-2xl" />
                 </div>
 
                 <img
@@ -94,7 +94,7 @@ const Testimonials = () => {
                 className="flex justify-end  cursor-pointer transition-all duration-500 ease-in-out"
                 onClick={swipe}
               >
-                <BsArrowRight className="text-2xl text-end" />
+                <BsArrowRight className="text-2xl  text-end" />
               </p>
             </div>
           </SwiperSlide>
