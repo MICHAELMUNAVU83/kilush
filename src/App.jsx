@@ -21,16 +21,16 @@ function App() {
               value: "#5FBFF9",
               animation: {
                 enable: true,
-                speed: 10,
+                speed: 30,
               },
             },
             move: {
               attract: {
                 enable: true,
                 rotate: {
-                  distance: 100,
-                  x: 2000,
-                  y: 2000,
+                  distance: 200,
+                  x: 2500,
+                  y: 2500,
                 },
               },
               direction: "none",
@@ -47,7 +47,7 @@ function App() {
                 generator: polygonPathName,
                 options: {
                   sides: 6,
-                  turnSteps: 30,
+                  turnSteps: 50,
                   angle: 30,
                 },
               },
@@ -55,7 +55,7 @@ function App() {
               speed: 3,
               straight: true,
               trail: {
-                fillColor: "#0B0612",
+                fillColor: "#071322",
                 length: 20,
                 enable: true,
               },
@@ -78,7 +78,7 @@ function App() {
             },
           },
           background: {
-            color: "#0B0612",
+            color: "#ffffff",
           },
           fullScreen: {
             zIndex: -1,
@@ -116,6 +116,8 @@ function App() {
           </Router>
         </div>
       </div>
+
+   
     </>
   );
 }
