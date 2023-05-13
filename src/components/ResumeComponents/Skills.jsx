@@ -55,19 +55,19 @@ const Skills = () => {
         Skills
       </h1>
       <p className="h-[1px] bg-white w-[100%]  my-4" />
-      <div className="flex ">
-        <div className="flex p-4 flex-col w-[50%]">
+      <div className="flex md:flex-row flex-col ">
+        <div className="flex p-4 flex-col md:w-[50%]">
           <div className="flex items-center ">
             <h1 className="uppercase font-bold libre text-gray-400 text-2xl">OVERALL</h1>
             <div className="p-2 border-[#5FBFF9] border-2 text-[#5FBFF9] rounded-full flex items-center justify-center ml-2">
               <BsCardList />
             </div>
           </div>
-          <p className="h-[2px] bg-[#5FBFF9] w-[70%]  my-4" />
+          <p className="h-[2px] bg-[#5FBFF9] md:w-[70%] w-[90%]  my-4" />
           {skills.map((skill) => (
             <div className="flex flex-col my-2">
               <p>{skill.name}</p>
-              <div className="flex w-[90%] p-2">
+              <div className="flex md:w-[90%] w-[95%] p-2">
                 <p className={`bg-green-500 h-[4px] w-[${skill.level}%]`} />
                 <p
                   className={`bg-gray-400 h-[4px] w-[${skill.difference}%] `}
@@ -76,14 +76,14 @@ const Skills = () => {
             </div>
           ))}
         </div>
-        <div className="flex p-4  flex-col w-[50%]">
+        <div className="flex p-4  flex-col md:w-[50%]">
           <div className="flex items-center ">
             <h1 className="uppercase font-bold libre text-gray-400 text-2xl">KNOWLEDGE</h1>
             <div className="p-2 border-[#5FBFF9] border-2 text-[#5FBFF9] rounded-full flex items-center justify-center ml-2">
               <GiGiftOfKnowledge  />
             </div>
           </div>
-          <p className="h-[2px] bg-[#5FBFF9] w-[70%]  my-4" />
+          <p className="h-[2px] bg-[#5FBFF9] md:w-[70%] w-[90%]  my-4" />
           <ul className=" space-y-4">
             {knowldges.map((knowldge) => (
               <li className="flex my-2  items-center">

@@ -43,15 +43,15 @@ const ExperienceEducation = () => {
   ];
   return (
     <div>
-      <div className="flex  justify-between">
-        <div className="flex flex-col w-[50%]">
+      <div className="flex md:flex-row flex-col  justify-between">
+        <div className="flex flex-col md:w-[50%]">
           <h1 className="text-2xl p-4 font-semibold libre  text-start">
             <FaBriefcase className="text-[#5FBFF9] border-[#5FBFF9]  inline-block mr-2 w-12 h-12 rounded-full  border-2 p-2" />
             Experience
           </h1>
           {experiences.map((experience) => (
             <div
-              className="flex flex-col h-[350px] p-4 gap-2"
+              className="flex flex-col md:h-[350px] p-4 gap-2"
               style={{
                 borderBottom: "1px solid #fff",
                 borderTop: "1px solid #fff",
@@ -78,14 +78,14 @@ const ExperienceEducation = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col w-[50%] border-l-2 border-white">
+        <div className="flex flex-col md:w-[50%] border-l-2 border-white">
           <h1 className="text-2xl libre p-4 font-semibold text-start">
             <FaUserGraduate className="text-[#5FBFF9] border-[#5FBFF9] inline-block mr-2 w-12 h-12 rounded-full  border-2 p-2" />
             Education
           </h1>
           {educations.map((education) => (
             <div
-              className="flex flex-col h-[350px] p-4 gap-2"
+              className="flex flex-col md:h-[350px] p-4 gap-2"
               style={{
                 borderBottom: "1px solid #fff",
                 borderTop: "1px solid #fff",
