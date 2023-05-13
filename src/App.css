@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=M+PLUS+Rounded+1c&family=Questrial&display=swap");
 html {
   scroll-behavior: smooth !important;
+}
+
+.libre {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+}
+.mplus {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.que {
+  font-family: "Questrial", sans-serif;
 }

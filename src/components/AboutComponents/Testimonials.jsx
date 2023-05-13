@@ -56,6 +56,10 @@ const Testimonials = () => {
 
   return (
     <div>
+      <h1 className="text-4xl libre font-bold text-start p-4 text-white">
+        Testimonials
+      </h1>
+      <p className="h-[1px] bg-white w-[100%]  my-4" />
       <Swiper
         loop={true}
         autoplay={{
@@ -77,7 +81,7 @@ const Testimonials = () => {
               <div className="flex flex-col justify-center items-center">
                 <div className="w-[80%] my-2 mx-auto">
                   <RiDoubleQuotesL className="text-2xl  text-gray-500 text-start" />
-                  <p className="text-center  ">{testimonial.body}</p>
+                  <p className="text-center que  ">{testimonial.body}</p>
                   <RiDoubleQuotesR className="float-right  text-gray-500 text-2xl" />
                 </div>
 
@@ -87,8 +91,10 @@ const Testimonials = () => {
                   className="w-32 h-32 rounded-full"
                 />
 
-                <h1 className="text-2xl text-gray-400 font-bold">{testimonial.name}</h1>
-                <h2 className="text-xl ">{testimonial.role}</h2>
+                <h1 className="text-2xl mplus text-gray-400 font-bold">
+                  {testimonial.name}
+                </h1>
+                <h2 className="text-xl que ">{testimonial.role}</h2>
               </div>
               <button
                 className="flex justify-end  cursor-pointer transition-all duration-500 ease-in-out"

@@ -57,7 +57,7 @@ const Services = () => {
 
   return (
     <>
-      <h1 className="text-4xl font-semibold text-start p-4 text-white">
+      <h1 className="text-4xl font-bold libre text-start p-4 text-white">
         My Services
       </h1>
       <div className="grid grid-cols-2 my-8">
@@ -74,10 +74,10 @@ const Services = () => {
               {service.icon}
             </div>
 
-            <h2 className="mt-4 text-2xl font-semibold text-white">
+            <h2 className="mt-4 text-2xl mplus font-semibold text-white">
               {service.title}
             </h2>
-            <p className="text-center text-gray-400">{service.description}</p>
+            <p className="text-center que text-gray-400">{service.description}</p>
           </div>
         ))}
       </div>

@@ -4,6 +4,7 @@ import profile from "./images/profile.jpg";
 import { FaUserAlt } from "react-icons/fa";
 import { MdLibraryBooks } from "react-icons/md";
 import { FiSend } from "react-icons/fi";
+import { SiFiles } from "react-icons/si";
 import { IoIosCall } from "react-icons/io";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
@@ -65,6 +66,13 @@ const SideBar = () => {
             <MdLibraryBooks className="text-2xl  cursor-pointer  " />
             <p className="text-sm px-2 z-10 absolute ml-8  bg-white  text-black group-hover:block hidden transition-all ease-in-out uppercase duration-500">
               Resume
+            </p>
+          </Link>
+
+          <Link to="/projects" className="flex gap-4 relative  group">
+            <SiFiles className="text-2xl  cursor-pointer  " />
+            <p className="text-sm px-2 z-10 absolute ml-8  bg-white  text-black group-hover:block hidden transition-all ease-in-out uppercase duration-500">
+              Projects
             </p>
           </Link>
 

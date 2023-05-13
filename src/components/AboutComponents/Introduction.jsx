@@ -25,7 +25,7 @@ const Introduction = () => {
   ];
   return (
     <section id="introduction">
-      <h1 className="text-4xl font-semibold text-start p-4 text-white">
+      <h1 className="text-4xl libre font-bold text-start p-4 text-white">
         About Me
       </h1>
       <div className="flex  justify-center">
@@ -51,8 +51,8 @@ const Introduction = () => {
           {introductiondetails.map((detail) => (
             <div className="flex flex-col gap-2">
               <div className="flex w-[80%] mx-auto items-center justify-between">
-                <p className="bg-[#5FBFF9] rounded-md flex justify-center text-black items-center w-[90px]">{detail.title}:</p>
-                <p className="text-gray-400">{detail.content}</p>
+                <p className="bg-[#5FBFF9] rounded-md flex justify-center text-black items-center mplus  w-[90px]">{detail.title}:</p>
+                <p className="text-gray-400 QUE">{detail.content}</p>
               </div>
               <p className="w-[70%] mx-auto bg-[#5FBFF9] h-[1px] " />
             </div>

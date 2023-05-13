@@ -31,7 +31,7 @@ const Pricing = () => {
   ];
   return (
     <>
-      <h1 className="text-4xl font-semibold text-start p-4 text-white">
+      <h1 className="text-4xl font-bold libre text-start p-4 text-white">
         Pricing
       </h1>
 
@@ -48,13 +48,13 @@ const Pricing = () => {
             <div className="flex items-center justify-center w-12 h-12 bg-[#5FBFF9] text-black rounded-full">
               {price.icon}
             </div>
-            <h2 className="mt-4 text-2xl font-semibold text-white">
+            <h2 className="mt-4 text-2xl mplus font-semibold text-white">
               {price.title}
             </h2>
-            <span className="mt-1 text-gray-600">${price.price}</span>
+            <span className="mt-1 text-gray-600 que">${price.price}</span>
             <ul className="mt-6 space-y-4">
               {price.features.map((feature) => (
-                <li className="flex items-center">
+                <li className="flex que items-center">
                   <span className="w-4 h-4 mr-2 text-green-500 fill-current">
                     <svg viewBox="0 0 20 20">
                       <path
@@ -68,7 +68,7 @@ const Pricing = () => {
               ))}
             </ul>
             <p className="bg-white h-[2px]  mx-auto w-[80%] my-4" />
-            <p className="uppercase cursor-pointer hover:scale-105 transition-all duration-500">
+            <p className="uppercase cursor-pointer mplus hover:scale-105 transition-all duration-500">
               Buy Now {">"}
             </p>
           </div>
