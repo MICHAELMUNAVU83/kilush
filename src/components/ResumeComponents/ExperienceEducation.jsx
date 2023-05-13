@@ -8,18 +8,19 @@ const ExperienceEducation = () => {
   const experiences = [
     {
       id: 1,
-      title: "data analyst",
-      company: "moringa school",
-
-      description: "I was a data analyst at moringa school",
+      title: "Freelance Data Scientist",
+      company: "Upwork",
+      description:
+        "As an Upwork data scientist freelancer, I work remotely with clients on predictive modeling, data analysis, machine learning, and visualization using Python, R, SQL, Excel, Tableau, and Power BI. Communication and collaboration are key to delivering quality solutions within the deadline.",
       timeframe: "2022-present",
     },
     {
       id: 2,
-      title: "data scientist",
-      company: "moringa school",
-      description: "I was a data scientist at moringa school",
-      timeframe: "2020-2021",
+      title: "Agricultural and Biosystems Engineer",
+      company: "Jkuat attachee",
+      description:
+        "At Jkaut Attachments , I gained valuable hands-on experience in developing and operating heavy machinery, enhancing my industry knowledge and practical skills.",
+      timeframe: "July-August 2022",
     },
   ];
   const educations = [
