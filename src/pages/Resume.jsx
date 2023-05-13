@@ -5,7 +5,7 @@ import Skills from "../components/ResumeComponents/Skills";
 const Resume = () => {
   return (
     <div
-      className="ml-[550px] bg-[#0B0612] h-[80vh] my-[4vh] overflow-y-scroll"
+      className="md:ml-[550px] bg-[#0B0612] h-[80vh] md:my-[4vh] overflow-y-scroll"
       style={{
         boxShadow: "0px 0px 10px 0px #5FBFF9",
       }}

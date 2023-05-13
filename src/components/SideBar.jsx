@@ -52,42 +52,62 @@ const SideBar = () => {
   ];
 
   return (
-    <div className="  text-white fixed   flex flex-row justify-center items-center">
-      <div className="flex h-[200px] flex-col gap-4">
-        <div className="flex items-center justify-center w-[50px]  text-black h-[200px] bg-[#5FBFF9] flex-col gap-8 py-4">
-          <Link to="/" className="flex gap-4 relative  group">
-            <FaUserAlt className="text-2xl  cursor-pointer  " />
-            <p className="text-sm mplus px-2 z-10 absolute ml-8  bg-white  text-black group-hover:block hidden transition-all ease-in-out uppercase duration-500">
-              About
-            </p>
-          </Link>
+    <div className="  text-white md:fixed   flex flex-col md:flex-row justify-center items-center">
+      <div className="md:hidden bg-black w-[100%] p-4 flex flex-col">
+        <h1 className="text-2xl font-bold text-white">Amos Kibet</h1>
 
-          <Link to="/resume" className="flex gap-4 relative  group">
-            <MdLibraryBooks className="text-2xl  cursor-pointer  " />
-            <p className="text-sm px-2 mplus z-10 absolute ml-8  bg-white  text-black group-hover:block hidden transition-all ease-in-out uppercase duration-500">
-              Resume
-            </p>
-          </Link>
+        <p className="text-[#5FBFF9] text-">
+          <Typewriter
+            options={{
+              strings: [
+                "Data Scientist",
+                "Machine Learning Engineer",
+                "Data Analyst",
+                "Web Scrapping Expert",
+                "Database Manager",
+              ],
+              autoStart: true,
+              loop: true,
 
-          <Link to="/projects" className="flex gap-4 relative  group">
-            <SiFiles className="text-2xl  cursor-pointer  " />
-            <p className="text-sm px-2 mplus z-10 absolute ml-8  bg-white  text-black group-hover:block hidden transition-all ease-in-out uppercase duration-500">
-              Projects
-            </p>
-          </Link>
+              backDelay: 1000,
+              speed: 100,
+            }}
+          />
+        </p>
+      </div>
+      <div className="flex sticky items-center justify-center md:w-[50px] w-[100%] text-black md:h-[200px] bg-[#5FBFF9]  md:flex-col gap-8 py-4">
+        <Link to="/" className="flex gap-4 relative  group">
+          <FaUserAlt className="text-2xl  cursor-pointer  " />
+          <p className="text-sm mplus px-2 z-10 absolute ml-8  bg-white  text-black group-hover:block hidden transition-all ease-in-out uppercase duration-500">
+            About
+          </p>
+        </Link>
 
-          <Link to="/contact" className="flex gap-4 relative  group">
-            <FiSend className="text-2xl  cursor-pointer  " />
-            <p className="text-sm mplus px-2 z-10 absolute ml-8  bg-white  text-black group-hover:block hidden transition-all ease-in-out uppercase duration-500">
-              Contact
-            </p>
-          </Link>
-        </div>
+        <Link to="/resume" className="flex gap-4 relative  group">
+          <MdLibraryBooks className="text-2xl  cursor-pointer  " />
+          <p className="text-sm px-2 mplus z-10 absolute ml-8  bg-white  text-black group-hover:block hidden transition-all ease-in-out uppercase duration-500">
+            Resume
+          </p>
+        </Link>
+
+        <Link to="/projects" className="flex gap-4 relative  group">
+          <SiFiles className="text-2xl  cursor-pointer  " />
+          <p className="text-sm px-2 mplus z-10 absolute ml-8  bg-white  text-black group-hover:block hidden transition-all ease-in-out uppercase duration-500">
+            Projects
+          </p>
+        </Link>
+
+        <Link to="/contact" className="flex gap-4 relative  group">
+          <FiSend className="text-2xl  cursor-pointer  " />
+          <p className="text-sm mplus px-2 z-10 absolute ml-8  bg-white  text-black group-hover:block hidden transition-all ease-in-out uppercase duration-500">
+            Contact
+          </p>
+        </Link>
       </div>
 
       <div
         style={{ backgroundImage: `url(${profile})` }}
-        className="w-[500px] h-[90vh] bg-cover bg-center "
+        className="md:w-[500px] w-[100%] h-[90vh] bg-cover bg-center "
       >
         <div className="w-[100%] h-[90vh] bg-gradient-to-t from-black to-transparent  py-2 flex flex-col gap-4 items-center justify-end">
           <div>

@@ -62,6 +62,7 @@ function App() {
         ]}
       />
       <Particles
+        id="tsparticles"
         options={{
           autoPlay: true,
           background: {
@@ -78,7 +79,7 @@ function App() {
             composite: "destination-out",
             cover: {
               color: {
-                value: "#5FBFF9",
+                value: "#fff",
               },
               opacity: 1,
             },
@@ -139,7 +140,7 @@ function App() {
                 links: {
                   opacity: 0.5,
                 },
-                radius: 80,
+                radius: 60,
               },
               grab: {
                 distance: 100,
@@ -153,19 +154,19 @@ function App() {
                 area: {
                   gradient: {
                     start: {
-                      value: "#5FBFF9",
+                      value: "#ffffff",
                     },
                     stop: {
-                      value: "#5FBFF9",
+                      value: "#000000",
                     },
                   },
-                  radius: 2000,
+                  radius: 1000,
                 },
                 shadow: {
                   color: {
-                    value: "#5FBFF9",
+                    value: "#000000",
                   },
-                  length: 3000,
+                  length: 2000,
                 },
               },
               push: {
@@ -180,12 +181,12 @@ function App() {
                 speed: 1,
               },
               slow: {
-                factor: 4,
-                radius: 250,
+                factor: 3,
+                radius: 200,
               },
               trail: {
-                delay: 0.05,
-                quantity: 20,
+                delay: 0.005,
+                quantity: 5,
                 particles: {
                   color: {
                     value: "#5FBFF9",
@@ -341,7 +342,7 @@ function App() {
               },
             },
             life: {
-              count: 100,
+              count: 37,
               delay: {
                 random: {
                   enable: false,
@@ -372,7 +373,7 @@ function App() {
               shadow: {
                 blur: false,
                 color: {
-                  value: "#00ff00",
+                  value: "#5FBFF9",
                 },
                 enable: false,
               },
@@ -418,11 +419,11 @@ function App() {
               },
               random: false,
               size: false,
-              speed: 3,
+              speed: 2,
               straight: false,
               trail: {
                 enable: false,
-                length: 30,
+                length: 10,
                 fillColor: {
                   value: "#5FBFF9",
                 },
@@ -524,8 +525,8 @@ function App() {
         }}
       />
 
-      <div className="  h-screen flex flex-col justify-center items-center ">
-        <div className=" w-[85%] mx-auto text-white">
+      <div className="  md:h-screen flex flex-col justify-center items-center ">
+        <div className=" md:w-[85%] w-[90%]  mx-auto text-white">
           <Router>
             <SideBar />
             <Routes>
