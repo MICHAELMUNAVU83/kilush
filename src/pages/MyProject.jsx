@@ -18,18 +18,18 @@ const MyProject = ({ projects }) => {
         <Link to="/projects">
           <BsArrowLeft className="text-2xl my-4 text-white cursor-pointer" />
         </Link>
-        <div className="flex flex-col w-[90%] mx-auto gap-4">
+        <div className="flex flex-col md:w-[90%] w-[95%] mx-auto gap-4">
           <img
             src={project.image}
             alt=""
             className="w-[100%] h-[400px] object-cover"
           />
-          <h1 className="text-4xl  font-bold libre text-start my-4 text-white">
+          <h1 className="md:text-4xl tetx-2xl  font-bold libre text-start my-4 text-white">
             {project.title}
           </h1>
           <p className="h-[1px] bg-white w-[100%]  my-2" />
           <p className="text-gray-400 text-xl mplus">{project.description}</p>
-          <h1 className="text-2xl font-bold libre text-start my-4 text-white">
+          <h1 className="md:text-2xl text-xl font-bold libre text-start my-4 text-white">
             Technologies Used
           </h1>
 

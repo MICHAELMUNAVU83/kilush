@@ -25,31 +25,31 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "John Doe",
-      role: "CEO",
-      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      name: "Jane Kamau",
+      role: "CEO Dams Data",
+      body: "Their expertise in data analysis and modeling is unparalleled.",
       image: testimonial1,
     },
     {
       id: 2,
-      name: "Jane Doe",
+      name: "Kim wario",
       role: "CTO",
-      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      body: "They have consistently delivered accurate and actionable insights",
       image: testimonial2,
     },
 
     {
       id: 3,
-      name: "John Smith",
-      role: "COO",
-      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      name: "Naomi Smith",
+      role: "Data Science Expert",
+      body: "They have consistently delivered accurate and actionable insights",
       image: testimonial3,
     },
     {
       id: 4,
-      name: "Jane Smith",
-      role: "CFO",
-      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      name: "Mike Jones",
+      role: "CFO Zee Techs",
+      body: "Their attention to detail and problem-solving skills are impressive.",
       image: testimonial4,
     },
   ];

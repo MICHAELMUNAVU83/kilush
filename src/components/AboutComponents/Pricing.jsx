@@ -8,14 +8,14 @@ const Pricing = () => {
       id: 1,
       icon: <IoRocketSharp />,
       title: "Basic",
-      price: 9.99,
+      price: "24K KSH",
       features: ["1 website scrapped", "Database mangement", "1 model trained"],
     },
     {
       id: 2,
       icon: <FaCrown />,
       title: "Premium",
-      price: 19.99,
+      price: "40K KSH",
       features: [
         "4 website scrapped",
         "Database mangement",
@@ -45,7 +45,7 @@ const Pricing = () => {
             <h2 className="mt-4 text-2xl mplus font-semibold text-white">
               {price.title}
             </h2>
-            <span className="mt-1 text-gray-600 que">${price.price}</span>
+            <span className="mt-1 text-gray-600 que">{price.price}</span>
             <ul className="mt-6 space-y-4">
               {price.features.map((feature) => (
                 <li className="flex que items-center">
@@ -63,7 +63,7 @@ const Pricing = () => {
             </ul>
             <p className="bg-white h-[2px]  mx-auto w-[80%] my-4" />
             <p className="uppercase cursor-pointer mplus hover:scale-105 transition-all duration-500">
-              Buy Now {">"}
+              Order Now {">"}
             </p>
           </div>
         ))}
