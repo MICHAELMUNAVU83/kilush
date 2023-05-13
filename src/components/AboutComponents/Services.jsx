@@ -1,11 +1,10 @@
 import React from "react";
 import { BsDatabaseFillAdd } from "react-icons/bs";
-import { SiMicrosoftexcel } from "react-icons/si";
 import { TbRobot } from "react-icons/tb";
-import { SiThealgorithms } from "react-icons/si";
 import { SiSimpleanalytics } from "react-icons/si";
 import { SiWebmoney } from "react-icons/si";
 import { AiFillDatabase } from "react-icons/ai";
+import {GrInternetExplorer} from "react-icons/gr"
 
 const Services = () => {
   const services = [
@@ -49,7 +48,7 @@ const Services = () => {
     },
     {
       id: 6,
-      icon: <SiThealgorithms />,
+      icon: <GrInternetExplorer />,
       title: "Website Automation",
       description:
         "Automating repetitive tasks on websites to save time and effort.",

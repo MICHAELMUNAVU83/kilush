@@ -88,7 +88,7 @@ function App() {
             direction: "none",
             rate: {
               quantity: 1,
-              delay: 0.25,
+              delay: 0.5,
             },
             size: {
               width: 0,
