@@ -7,16 +7,16 @@ const ContactForm = () => {
         Get In Touch
       </h1>
       <p className="h-[1px] bg-[#5FBFF9] w-[80%]  my-4" />
-      <div className="flex justify-between mplus ">
+      <div className="flex md:flex-row flex-col gap-4 justify-between mplus ">
         <input
           type="text"
           placeholder="Name"
-          className="w-[45%] border-2  outline-none bg-[#0F0F0F] border-gray-400  p-2 flex justify-between "
+          className="md:w-[45%] border-2  outline-none bg-[#0F0F0F] border-gray-400  p-2 flex justify-between "
         />
         <input
           type="text"
-          placeholder="Name"
-          className="w-[45%] border-2 outline-none bg-[#0F0F0F] border-gray-400  p-2 flex justify-between "
+          placeholder="Subject"
+          className="md:w-[45%] border-2 outline-none bg-[#0F0F0F] border-gray-400  p-2 flex justify-between "
         />
       </div>
       <textarea
