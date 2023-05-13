@@ -30,7 +30,7 @@ const Introduction = () => {
       </h1>
       <div className="flex  justify-center">
         <p
-          className="w-[50%]  p-4 "
+          className="w-[50%] text-gray-400  p-4 "
           style={{
             borderRight: "1px solid white",
             borderTop: "1px solid white",
@@ -52,7 +52,7 @@ const Introduction = () => {
             <div className="flex flex-col gap-2">
               <div className="flex w-[80%] mx-auto items-center justify-between">
                 <p className="bg-[#5FBFF9] rounded-md flex justify-center text-black items-center w-[90px]">{detail.title}:</p>
-                <p className="">{detail.content}</p>
+                <p className="text-gray-400">{detail.content}</p>
               </div>
               <p className="w-[70%] mx-auto bg-[#5FBFF9] h-[1px] " />
             </div>

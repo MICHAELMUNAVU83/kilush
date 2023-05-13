@@ -77,7 +77,7 @@ const Services = () => {
             <h2 className="mt-4 text-2xl font-semibold text-white">
               {service.title}
             </h2>
-            <p className="text-center text-gray-600">{service.description}</p>
+            <p className="text-center text-gray-400">{service.description}</p>
           </div>
         ))}
       </div>

@@ -87,8 +87,8 @@ const Testimonials = () => {
                   className="w-32 h-32 rounded-full"
                 />
 
-                <h1 className="text-2xl text-gray-500 font-bold">{testimonial.name}</h1>
-                <h2 className="text-xl font-semibold">{testimonial.role}</h2>
+                <h1 className="text-2xl text-gray-400 font-bold">{testimonial.name}</h1>
+                <h2 className="text-xl ">{testimonial.role}</h2>
               </div>
               <p
                 className="flex justify-end  cursor-pointer transition-all duration-500 ease-in-out"

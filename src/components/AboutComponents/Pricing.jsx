@@ -63,7 +63,7 @@ const Pricing = () => {
                       ></path>
                     </svg>
                   </span>
-                  <span className="text-white">{feature}</span>
+                  <span className="text-gray-400">{feature}</span>
                 </li>
               ))}
             </ul>

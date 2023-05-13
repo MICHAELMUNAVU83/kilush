@@ -50,7 +50,7 @@ const FunFacts = () => {
             <p className="text-xl h-12 w-12 flex items-center text-[#5FBFF9] justify-center mx-auto rounded-full border-[#5FBFF9] border-2 p-2">
               {detail.icon}
             </p>
-            <p className="w-[70%] mx-auto  text-sm text-center">{detail.title}</p>
+            <p className="w-[70%] mx-auto text-gray-400  text-sm text-center">{detail.title}</p>
           </div>
         ))}
       </div>
