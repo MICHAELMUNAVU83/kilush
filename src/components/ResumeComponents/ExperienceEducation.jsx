@@ -45,7 +45,7 @@ const ExperienceEducation = () => {
     <div>
       <div className="flex  justify-between">
         <div className="flex flex-col w-[50%]">
-          <h1 className="text-2xl p-4 font-semibold text-start">
+          <h1 className="text-2xl p-4 font-semibold libre  text-start">
             <FaBriefcase className="text-[#5FBFF9] border-[#5FBFF9]  inline-block mr-2 w-12 h-12 rounded-full  border-2 p-2" />
             Experience
           </h1>
@@ -60,26 +60,26 @@ const ExperienceEducation = () => {
               <p
                 className={
                   experience.id === 1
-                    ? " flex justify-center items-center  text-green-500 border-green-500 border-2 p-2 w-[50%]"
-                    : " flex justify-center items-center  border-gray-400 border-2 p-2 w-[50%]"
+                    ? " flex justify-center items-center mplus  text-green-500 border-green-500 border-2 p-2 w-[60%]"
+                    : " flex justify-center items-center mplus  border-gray-400 border-2 p-2 w-[60%]"
                 }
               >
                 {experience.timeframe}
               </p>
-              <p className="text-gray-500 uppercase font-bold">
+              <p className="text-gray-500 libre uppercase font-bold">
                 {experience.company}
               </p>
-              <p className="flex items-center gap-2 text-[#5FBFF9]">
+              <p className="flex items-center mplus gap-2 text-[#5FBFF9]">
                 <MdWorkspacesFilled />
 
                 {experience.title}
               </p>
-              <p>{experience.description}</p>
+              <p className="que">{experience.description}</p>
             </div>
           ))}
         </div>
         <div className="flex flex-col w-[50%] border-l-2 border-white">
-          <h1 className="text-2xl p-4 font-semibold text-start">
+          <h1 className="text-2xl libre p-4 font-semibold text-start">
             <FaUserGraduate className="text-[#5FBFF9] border-[#5FBFF9] inline-block mr-2 w-12 h-12 rounded-full  border-2 p-2" />
             Education
           </h1>
@@ -94,21 +94,21 @@ const ExperienceEducation = () => {
               <p
                 className={
                   education.id === 1
-                    ? " flex justify-center items-center text-green-500 border-green-500 border-2 p-2 w-[50%]"
-                    : " flex justify-center items-center  border-gray-400 border-2 p-2 w-[50%]"
+                    ? " flex justify-center items-center mplus text-green-500 border-green-500 border-2 p-2 w-[50%]"
+                    : " flex justify-center items-center  mplus border-gray-400 border-2 p-2 w-[50%]"
                 }
               >
                 {education.timeframe}
               </p>
-              <p className="text-gray-500 uppercase font-bold">
+              <p className="text-gray-500 libre uppercase font-bold">
                 {education.school}
               </p>
-              <p className="flex items-center text-sm text-[#5FBFF9] gap-2">
+              <p className="flex items-center mplus text-sm text-[#5FBFF9] gap-2">
                 <MdSchool />
 
                 {education.degree}
               </p>
-              <p>{education.description}</p>
+              <p  className="que"> {education.description}</p>
             </div>
           ))}
         </div>

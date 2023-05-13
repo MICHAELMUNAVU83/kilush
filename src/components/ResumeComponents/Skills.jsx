@@ -51,13 +51,14 @@ const Skills = () => {
   ];
   return (
     <div>
-      <h1 className="text-4xl font-semibold text-start p-4 text-white">
+      <h1 className="text-5xl libre font-semibold text-start p-4 text-white">
         Skills
       </h1>
+      <p className="h-[1px] bg-white w-[100%]  my-4" />
       <div className="flex ">
         <div className="flex p-4 flex-col w-[50%]">
           <div className="flex items-center ">
-            <h1 className="uppercase font-bold text-2xl">OVERALL</h1>
+            <h1 className="uppercase font-bold libre text-gray-400 text-2xl">OVERALL</h1>
             <div className="p-2 border-[#5FBFF9] border-2 text-[#5FBFF9] rounded-full flex items-center justify-center ml-2">
               <BsCardList />
             </div>
@@ -77,7 +78,7 @@ const Skills = () => {
         </div>
         <div className="flex p-4  flex-col w-[50%]">
           <div className="flex items-center ">
-            <h1 className="uppercase font-bold text-2xl">KNOWLEDGE</h1>
+            <h1 className="uppercase font-bold libre text-gray-400 text-2xl">KNOWLEDGE</h1>
             <div className="p-2 border-[#5FBFF9] border-2 text-[#5FBFF9] rounded-full flex items-center justify-center ml-2">
               <GiGiftOfKnowledge  />
             </div>
