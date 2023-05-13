@@ -103,7 +103,7 @@ const ExperienceEducation = () => {
               <p className="text-gray-500 libre uppercase font-bold">
                 {education.school}
               </p>
-              <p className="flex items-center mplus text-sm text-[#5FBFF9] gap-2">
+              <p className="flex items-center mplus  text-[#5FBFF9] gap-2">
                 <MdSchool />
 
                 {education.degree}

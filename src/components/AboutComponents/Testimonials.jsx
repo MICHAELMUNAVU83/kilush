@@ -67,7 +67,7 @@ const Testimonials = () => {
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
-        className="flex justify-center items-center swiper-container"
+        className="flex justify-center items-center md:w-[100%]  w-[90%] md:mx-0 mx-auto swiper-container"
       >
         {testimonials.map((testimonial) => (
           <SwiperSlide className="flex  justify-center py-12 ">

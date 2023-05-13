@@ -28,9 +28,9 @@ const Introduction = () => {
       <h1 className="text-4xl libre font-bold text-start p-4 text-white">
         About Me
       </h1>
-      <div className="flex  justify-center">
+      <div className="flex md:flex-row flex-col justify-center">
         <p
-          className="w-[50%] text-gray-400  p-4 "
+          className="md:w-[50%] text-gray-400  p-4 "
           style={{
             borderRight: "1px solid white",
             borderTop: "1px solid white",
@@ -43,7 +43,7 @@ const Introduction = () => {
           Let's dive into the world of data science together!
         </p>
         <div
-          className="flex flex-col gap-2  p-4 justify-between w-[50%]"
+          className="flex flex-col gap-2  p-4 justify-between md:w-[50%]"
           style={{
             borderTop: "1px solid white",
           }}

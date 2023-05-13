@@ -63,7 +63,7 @@ const Services = () => {
       <div className="grid grid-cols-2 my-8">
         {services.map((service) => (
           <div
-            className="flex flex-col items-center justify-center  p-4  shadow-lg"
+            className="flex flex-col text-center items-center justify-center  p-4  shadow-lg"
             style={{
               borderTop: "1px solid white",
               borderBottom: "1px solid white",
@@ -74,7 +74,7 @@ const Services = () => {
               {service.icon}
             </div>
 
-            <h2 className="mt-4 text-2xl mplus font-semibold text-white">
+            <h2 className="mt-4 md:text-2xl mplus font-semibold text-white">
               {service.title}
             </h2>
             <p className="text-center que text-gray-400">{service.description}</p>

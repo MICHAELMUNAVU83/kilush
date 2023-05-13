@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 const MyProjects = ({ projects }) => {
   const navigate = useNavigate();
   return (
-    <div className="grid md:grid-cols-2 grid-cols-1 px-4 gap-4">
+    <div className="grid md:grid-cols-2 grid-cols-1 md:px-4 px-2 gap-4">
       {projects.map((project) => (
         <div>
           <div
@@ -15,7 +15,7 @@ const MyProjects = ({ projects }) => {
             style={{
               backgroundImage: `url(${project.image})`,
             }}
-            className="w-[100%] group projects  group-hover:blur h-[400px] bg-cover bg-center transition-all ease-in-out duration-500"
+            className="w-[100%] cursor-pointer group projects  group-hover:blur h-[400px] bg-cover bg-center transition-all ease-in-out duration-500"
           >
             <div className="w-[100%] h-[400px] group-hover:flex hidden bg-gradient-to-t from-[#5FBFF9] to-transparent  py-2 flex-col gap-4 items-center justify-center transition-all ease-in-out duration-500">
               <Link
