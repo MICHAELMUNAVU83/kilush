@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useState, useEffect } from "react";
 import "./App.css";
 import About from "./pages/About";
 import Resume from "./pages/Resume";
@@ -7,12 +7,36 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SideBar from "./components/SideBar";
 import Particles from "react-tsparticles";
 import { polygonPathName, loadPolygonPath } from "tsparticles-path-polygon";
+import AnimatedCursor from "react-animated-cursor";
 function App() {
   const particlesInit = useCallback(async (engine) => {
     await loadPolygonPath(engine);
   }, []);
+
   return (
     <>
+      <AnimatedCursor
+        innerSize={20}
+        outerSize={20}
+        color="255, 255, 255"
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={5}
+        clickables={[
+          "a",
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          "label[for]",
+          "h1",
+          "select",
+          "textarea",
+          "button",
+          ".link",
+        ]}
+      />
       <Particles
         options={{
           fpsLimit: 60,

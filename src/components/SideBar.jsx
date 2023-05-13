@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import profile from "./images/profile.jpg";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FaUserAlt } from "react-icons/fa";
 import { MdLibraryBooks } from "react-icons/md";
 import { FiSend } from "react-icons/fi";
@@ -54,22 +53,26 @@ const SideBar = () => {
   return (
     <div className="  text-white fixed   flex flex-row justify-center items-center">
       <div className="flex h-[200px] flex-col gap-4">
-        <div className="flex w-[50px] h-[100px] items-center justify-center text-[#5FBFF9] bg-black flex-col py-2 ">
-          <h1 className="font-bold">
-            <BsFillMoonStarsFill className="text-2xl  cursor-pointer" />
-          </h1>
-        </div>
         <div className="flex items-center justify-center w-[50px]  text-black h-[200px] bg-[#5FBFF9] flex-col gap-8 py-4">
-          <Link to="/">
-            <FaUserAlt className="text-2xl  cursor-pointer" />
+          <Link to="/" className="flex gap-4 relative  group">
+            <FaUserAlt className="text-2xl  cursor-pointer  " />
+            <p className="text-sm px-2 z-10 absolute ml-8  bg-white  text-black group-hover:block hidden transition-all ease-in-out uppercase duration-500">
+              About
+            </p>
           </Link>
 
-          <Link to="/resume">
-            <MdLibraryBooks className="text-2xl  cursor-pointer" />
+          <Link to="/resume" className="flex gap-4 relative  group">
+            <MdLibraryBooks className="text-2xl  cursor-pointer  " />
+            <p className="text-sm px-2 z-10 absolute ml-8  bg-white  text-black group-hover:block hidden transition-all ease-in-out uppercase duration-500">
+              Resume
+            </p>
           </Link>
 
-          <Link to="/contact">
-            <FiSend className="text-2xl  cursor-pointer" />
+          <Link to="/contact" className="flex gap-4 relative  group">
+            <FiSend className="text-2xl  cursor-pointer  " />
+            <p className="text-sm px-2 z-10 absolute ml-8  bg-white  text-black group-hover:block hidden transition-all ease-in-out uppercase duration-500">
+              Contact
+            </p>
           </Link>
         </div>
       </div>
@@ -78,7 +81,7 @@ const SideBar = () => {
         style={{ backgroundImage: `url(${profile})` }}
         className="w-[500px] h-[90vh] bg-cover bg-center "
       >
-        <div className="w-[100%] h-[90vh] bg-gradient-to-t from-black to-transparent  py-2 flex flex-col gap-4 items-center justify-end">  
+        <div className="w-[100%] h-[90vh] bg-gradient-to-t from-black to-transparent  py-2 flex flex-col gap-4 items-center justify-end">
           <div>
             <h1 className="text-4xl font-bold text-white">Amos Kibet</h1>
           </div>
@@ -94,7 +97,7 @@ const SideBar = () => {
                 ],
                 autoStart: true,
                 loop: true,
-              
+
                 backDelay: 1000,
                 speed: 100,
               }}
