@@ -34,9 +34,10 @@ const ExperienceEducation = () => {
     {
       id: 2,
       school: "JKUAT",
-      degree: "2016-2020",
-      timeframe: "2020-2021",
-      description: "I was a data scientist at moringa school",
+      degree: "Agricultural and Biosystems Engineering",
+      timeframe: "2019-2025",
+      description:
+        "At JKUAT, I acquired skills in product processing and package handling, recycling of waste, maintenance and servicing, soil water analysis, GIS, design and fabrication of equipment, design and control of irrigation systems, and industrial effluent disposal.",
     },
   ];
   return (
@@ -49,7 +50,7 @@ const ExperienceEducation = () => {
           </h1>
           {experiences.map((experience) => (
             <div
-              className="flex flex-col h-[300px] p-4 gap-2"
+              className="flex flex-col h-[350px] p-4 gap-2"
               style={{
                 borderBottom: "1px solid #fff",
                 borderTop: "1px solid #fff",
@@ -67,8 +68,8 @@ const ExperienceEducation = () => {
               <p className="text-gray-500 uppercase font-bold">
                 {experience.company}
               </p>
-              <p className="flex items-center gap-2">
-                <MdWorkspacesFilled className="text-[#5FBFF9] " />
+              <p className="flex items-center gap-2 text-[#5FBFF9]">
+                <MdWorkspacesFilled />
 
                 {experience.title}
               </p>
@@ -83,7 +84,7 @@ const ExperienceEducation = () => {
           </h1>
           {educations.map((education) => (
             <div
-              className="flex flex-col h-[300px] p-4 gap-2"
+              className="flex flex-col h-[350px] p-4 gap-2"
               style={{
                 borderBottom: "1px solid #fff",
                 borderTop: "1px solid #fff",
@@ -101,8 +102,8 @@ const ExperienceEducation = () => {
               <p className="text-gray-500 uppercase font-bold">
                 {education.school}
               </p>
-              <p className="flex items-center gap-2">
-                <MdSchool className="text-[#5FBFF9] " />
+              <p className="flex items-center text-sm text-[#5FBFF9] gap-2">
+                <MdSchool />
 
                 {education.degree}
               </p>

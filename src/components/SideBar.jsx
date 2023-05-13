@@ -78,7 +78,7 @@ const SideBar = () => {
         style={{ backgroundImage: `url(${profile})` }}
         className="w-[500px] h-[90vh] bg-cover bg-center "
       >
-        <div className="w-[100%] h-[90vh] bg-black bg-opacity-30 py-2 flex flex-col gap-4 items-center justify-end">
+        <div className="w-[100%] h-[90vh] bg-gradient-to-t from-black to-transparent  py-2 flex flex-col gap-4 items-center justify-end">  
           <div>
             <h1 className="text-4xl font-bold text-white">Amos Kibet</h1>
           </div>

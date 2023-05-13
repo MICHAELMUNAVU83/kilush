@@ -15,22 +15,22 @@ function App() {
     <>
       <Particles
         options={{
-          fpsLimit: 80,
+          fpsLimit: 60,
           particles: {
             color: {
               value: "#5FBFF9",
               animation: {
                 enable: true,
-                speed: 30,
+                speed: 10,
               },
             },
             move: {
               attract: {
                 enable: true,
                 rotate: {
-                  distance: 200,
-                  x: 2500,
-                  y: 2500,
+                  distance: 100,
+                  x: 2000,
+                  y: 2000,
                 },
               },
               direction: "none",
@@ -47,7 +47,7 @@ function App() {
                 generator: polygonPathName,
                 options: {
                   sides: 6,
-                  turnSteps: 50,
+                  turnSteps: 30,
                   angle: 30,
                 },
               },
@@ -78,7 +78,7 @@ function App() {
             },
           },
           background: {
-            color: "#ffffff",
+            color: "#3c5570",
           },
           fullScreen: {
             zIndex: -1,
@@ -116,8 +116,6 @@ function App() {
           </Router>
         </div>
       </div>
-
-   
     </>
   );
 }
