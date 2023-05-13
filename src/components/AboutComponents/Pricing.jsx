@@ -9,12 +9,7 @@ const Pricing = () => {
       icon: <IoRocketSharp />,
       title: "Basic",
       price: 9.99,
-      features: [
-        "1 GB Storage",
-        "2 Users",
-        "Send up to 3 GB",
-        "Send up to 3 GB",
-      ],
+      features: ["1 website scrapped", "Database mangement", "1 model trained"],
     },
     {
       id: 2,
@@ -22,23 +17,22 @@ const Pricing = () => {
       title: "Premium",
       price: 19.99,
       features: [
-        "1 GB Storage",
-        "2 Users",
-        "Send up to 3 GB",
-        "Send up to 3 GB",
+        "4 website scrapped",
+        "Database mangement",
+        "3 models trained",
       ],
     },
   ];
   return (
     <>
       <h1 className="text-4xl font-bold libre text-start p-4 text-white">
-        Pricing
+        Rates
       </h1>
 
-      <div className="flex items-center justify-center my-8  ">
+      <div className="flex md:flex-row flex-col items-center justify-center my-8  ">
         {prices.map((price) => (
           <div
-            className="flex flex-col items-center justify-center w-1/2 p-4  border-t-2 border-r-2 border-b-2 border-white  shadow-lg"
+            className="flex flex-col items-center justify-center w-[90%] md:w-1/2 p-4 border-l-2 md:border-l-0 border-t-2 border-r-2 border-b-2  border-white  shadow-lg"
             style={{
               borderTop: "1px solid white",
               borderBottom: "1px solid white",

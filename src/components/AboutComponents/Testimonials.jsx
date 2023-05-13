@@ -97,7 +97,7 @@ const Testimonials = () => {
                 <h2 className="text-xl que ">{testimonial.role}</h2>
               </div>
               <button
-                className="flex justify-end  cursor-pointer transition-all duration-500 ease-in-out"
+                className="flex justify-end  text-end cursor-pointer transition-all duration-500 ease-in-out"
                 onClick={swipe}
               >
                 <BsArrowRight className="text-2xl text-[#5FBFF9]  text-end" />

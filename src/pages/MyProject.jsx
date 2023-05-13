@@ -16,7 +16,7 @@ const MyProject = ({ projects }) => {
         }}
       >
         <Link to="/projects">
-          <BsArrowLeft className="text-2xl text-white cursor-pointer" />
+          <BsArrowLeft className="text-2xl my-4 text-white cursor-pointer" />
         </Link>
         <div className="flex flex-col w-[90%] mx-auto gap-4">
           <img
@@ -24,7 +24,7 @@ const MyProject = ({ projects }) => {
             alt=""
             className="w-[100%] h-[400px] object-cover"
           />
-          <h1 className="text-4xl font-bold libre text-start my-4 text-white">
+          <h1 className="text-4xl  font-bold libre text-start my-4 text-white">
             {project.title}
           </h1>
           <p className="h-[1px] bg-white w-[100%]  my-2" />
