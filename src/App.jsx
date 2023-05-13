@@ -526,7 +526,7 @@ function App() {
       />
 
       <div className="  md:h-screen flex flex-col justify-center items-center ">
-        <div className=" md:w-[85%] w-[90%]  mx-auto text-white">
+        <div className=" md:w-[85%] w-[88%]  mx-auto text-white">
           <Router>
             <SideBar />
             <Routes>
