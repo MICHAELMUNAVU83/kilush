@@ -68,12 +68,12 @@ const Testimonials = () => {
         {testimonials.map((testimonial) => (
           <SwiperSlide className="flex  justify-center py-12 ">
             <div className="flex flex-col justify-center  ">
-              <p
+              <button
                 className="flex justify-start cursor-pointer  transition-all duration-500 ease-in-out"
                 onClick={swipeBack}
               >
                 <BsArrowLeft className="text-2xl text-[#5FBFF9] text-start" />
-              </p>
+              </button>
               <div className="flex flex-col justify-center items-center">
                 <div className="w-[80%] my-2 mx-auto">
                   <RiDoubleQuotesL className="text-2xl  text-gray-500 text-start" />
@@ -90,12 +90,12 @@ const Testimonials = () => {
                 <h1 className="text-2xl text-gray-400 font-bold">{testimonial.name}</h1>
                 <h2 className="text-xl ">{testimonial.role}</h2>
               </div>
-              <p
+              <button
                 className="flex justify-end  cursor-pointer transition-all duration-500 ease-in-out"
                 onClick={swipe}
               >
                 <BsArrowRight className="text-2xl text-[#5FBFF9]  text-end" />
-              </p>
+              </button>
             </div>
           </SwiperSlide>
         ))}
